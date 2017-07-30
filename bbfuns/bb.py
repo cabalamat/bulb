@@ -4,13 +4,13 @@
 
 class BlackBox:
     
-    def getName(self):
+    def getName(self)->str:
         """ return the function's name 
         """
         a = self.__class__.__name__
         return a
     
-    def run(self, x):
+    def run(self, x:str)->str:
         """ Run the function
         """
         raise ImplementedBySubclass
