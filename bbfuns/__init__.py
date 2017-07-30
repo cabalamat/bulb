@@ -2,7 +2,7 @@
 
 print("in __init__")
 
-import bb
+from . import bb
 
 BB_CLASSES = [
     bb.Doubler,

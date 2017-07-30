@@ -7,10 +7,8 @@ class BlackBox:
     def getName(self):
         """ return the function's name 
         """
-        a = self.__class__
-        b = a.__name__
-        print "a=%r b=%r" % (a,b)
-        return b
+        a = self.__class__.__name__
+        return a
     
     def run(self, x):
         """ Run the function
