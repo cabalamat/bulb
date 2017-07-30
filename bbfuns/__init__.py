@@ -1,13 +1,14 @@
 # __init__.py for bbfuns
 
+print("in __init__")
+
 import bb
 
 BB_CLASSES = [
-    bbfun.Doubler,
-    bbfun.Appenda,
-    bbfun.Appendz,
-    bbfun.RemoveCaps,
-    bbfun.RepeatPrevious]
+    bb.Doubler,
+    bb.Appenda,
+    bb.Appendz,
+    bb.RemoveCaps]
 
 
 #end

@@ -4,7 +4,7 @@
 
 class BlackBox:
     
-    def getName(self) -> str:
+    def getName(self):
         """ return the function's name 
         """
         a = self.__class__
@@ -12,7 +12,7 @@ class BlackBox:
         print "a=%r b=%r" % (a,b)
         return b
     
-    def run(self, x:str) -> str:
+    def run(self, x):
         """ Run the function
         """
         raise ImplementedBySubclass

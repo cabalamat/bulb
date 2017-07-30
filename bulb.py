@@ -3,13 +3,12 @@
 import bbfuns
 
 
-
 #---------------------------------------------------------------------
 
 def main():
-    for bbk in bbfns.BB_CLASSES:
+    for bbk in bbfuns.BB_CLASSES:
         bbf = bbk()
-        print(bbf.name())
+        print(bbf.getName())
 
 #---------------------------------------------------------------------
 
