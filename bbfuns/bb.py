@@ -13,7 +13,11 @@ class BlackBox:
     def run(self, x:str)->str:
         """ Run the function
         """
-        raise ImplementedBySubclass
+        raise NotImplementedError
+    
+    #===== inputs =====
+    
+    inputs = ['abc', 'aaaaa', '', '1234', 'qwerty']
 
 
 #---------------------------------------------------------------------
@@ -38,6 +42,10 @@ class RemoveCaps(BlackBox):
             if not ch.isupper():
                 r += ch
         return r
+    
+    inputs = ['abc', 'ABC', 
+              'aaaaa', 'VVVVaVaaVaa', '', '1234', 
+              'qwerty', 'Qwerty']
 
 
 #---------------------------------------------------------------------
