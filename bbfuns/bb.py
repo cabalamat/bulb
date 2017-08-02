@@ -1,6 +1,12 @@
 # bb.py = Black-box functions
 
 #---------------------------------------------------------------------
+"""
+inputds come in 2 classes:
+
+inputs0 = training set before FP has to guess
+inputs1 = training set from 1st guess onwards
+"""
 
 class BlackBox:
     
@@ -17,7 +23,8 @@ class BlackBox:
     
     #===== inputs =====
     
-    inputs = ['abc', 'aaaaa', '', '1234', 'qwerty']
+    inputs0 = ['abc', 'aaaaa', '', '1234', 'qwerty']
+    inputs1 = ['def', 'VVVV', 'a', 'ww', 'qq', 'rrr', 'stuv']
 
 
 #---------------------------------------------------------------------

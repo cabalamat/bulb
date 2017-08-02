@@ -1,7 +1,9 @@
 # fp.py = function predictor abstract class
 
-class FunPred:
-    def getName(self)->str:
-        raise NotImplementedError
+class FunPred(metaclass=ABCMeta):
+    
+    @abstractmethod
+    def getName(self)->str: pass
+        
 
 #end
