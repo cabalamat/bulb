@@ -2,6 +2,7 @@
 
 from typing import *
 import os, os.path
+import sys
 
 #---------------------------------------------------------------------
 
@@ -35,6 +36,7 @@ def form(fs:str, *args, **kwargs)->str:
 
 def pr(fs:str, *args, **kwargs):
     """ print to stdout """
+    sys.stdout.write(form(fs, *args, **kwargs))
 
 def prn(fs:str, *args, **kwargs):
     """ print to stdout, with \n at end """

@@ -74,7 +74,7 @@ class Environment:
             
             
         currentLog = Log(self.currentBB.getName(), logItems)
-        print(
+        
         
         
         
