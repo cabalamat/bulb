@@ -15,8 +15,8 @@ def normalizePath(p: str, *pathParts: List[str]) -> str:
     """
     p1 = os.path.abspath(os.path.expanduser(p))
     if len(pathParts)>0:
-        allPathParts = [ p1 ]
-        allPathParts.extend(pathParts)
+        allPathParts = [p1] + pathParts
+        #allPathParts.extend(pathParts)
         p1 = os.path.join(*allPathParts)
     p2 = os.path.abspath(p1)
     return p2
